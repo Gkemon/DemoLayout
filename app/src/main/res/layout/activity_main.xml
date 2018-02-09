@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.LinearLayout
+<android.widget.ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.gkemon.demolayout.MainActivity">
+
+<android.widget.LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <FrameLayout
         android:id="@+id/container"
@@ -21,12 +26,14 @@
             android:layout_marginTop="75sp"
             android:background="@drawable/hd_food" />
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:marginTop="30sp"
-            android:layout_marginBottom="180sp"
-            android:layout_marginLeft="340sp"
-            android:src="@drawable/ic_favorite_red_36dp">
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="280sp"
+            android:layout_marginStart="280sp"
+            android:layout_marginTop="80sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/ic_favorite_red_240dp">
         </ImageView>
 
         <LinearLayout
@@ -92,23 +99,15 @@
                         android:text="SHARE"/>
 
                 </LinearLayout>
-
             </LinearLayout>
-
-
-
-
         </LinearLayout>
-
-
         <ImageView
             android:id="@+id/imageINZoom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="invisible"
             />
-
     </FrameLayout>
 
-
 </android.widget.LinearLayout>
+</android.widget.ScrollView>
