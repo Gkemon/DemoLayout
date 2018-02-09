@@ -32,6 +32,7 @@ public class ZoomActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         // Hook up clicks on the thumbnail views.
